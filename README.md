@@ -4,7 +4,6 @@ Today I Learned - 간단하게 기록하는 공간
 ---
 
 ## Spring
-- Security
+- security
   - JWT Token
-
-- OAuth 2.0
+  - OAuth 2.0
