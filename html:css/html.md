@@ -1,4 +1,4 @@
-# html
+# HTML(Hyper Text Markup Language)
 ## 태그
 - 중첩 구조를 허용
 ```
@@ -29,7 +29,7 @@
 
 ### Inline
 - 요소를 구성하는 태그에 할당된 공간만 차지한다.
-- img, span, a, button, strong
+- img, span, a(`새창에서 열기 -> target = _blank`), button, strong
 
 ## 시맨틱 마크업
 - 검색 엔진 최적화
