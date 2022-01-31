@@ -16,7 +16,7 @@
 - 사용자에게 올바른 화면을 보여준다.
 
 ## 인프런 강의(김영한님 강의 참고)
-![MVC 구조]()
+![MVC 구조](https://github.com/parkje0927/TIL/blob/main/Spring/mvc/mvc.png)
 
 - 요청 흐름
 	- 서브릿이 호출되면 `HttpServlet` 이 제공하는 `servie()` 가 호출된다.
