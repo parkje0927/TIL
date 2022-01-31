@@ -29,7 +29,9 @@
 	- scroll : 내용의 길이와 상관 없이 스크롤이 항상 생김.
 
 ## 선택자
-## 기본 선택자
+![css_선택자]()
+
+### 기본 선택자
 - 전체 선택자 : `*`
 	- 많이 쓰는 것을 추천하지 않음.
 - ID 선택자 : `#`
@@ -42,7 +44,6 @@
 	}
 	```
 
-
 - `<ul>` 안에 8번째 위치한 `<li>`
 	- `li:nth-child(8)`
 - disabled 가 아닌 상태의 button 에 hover 하면 배경색이 red 가 되게 하기
@@ -51,3 +52,10 @@
 - 가상 요소 선택자
 	- 선택한 요소의 지정된 부분에 스타일을 입힐 수 있다.
 	- ::before, ::after, ::placeholder 등
+
+- hover
+`button:hover {}`
+- focus
+`button:focus {}`	
+- active
+`button:active {}`	
