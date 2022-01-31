@@ -4,7 +4,7 @@
 
 ## 속성
 ![css_속성](https://github.com/parkje0927/TIL/blob/main/html:css/css_%EC%86%8D%EC%84%B1.jpeg)
-![css_border]()
+![css_border](https://github.com/parkje0927/TIL/blob/main/html:css/css_border.jpeg)
 
 ## padding, margin
 - padding : 나 자신의 부피를 감싼다.
@@ -29,7 +29,7 @@
 	- scroll : 내용의 길이와 상관 없이 스크롤이 항상 생김.
 
 ## 선택자
-![css_선택자]()
+![css_선택자](https://github.com/parkje0927/TIL/blob/main/html:css/css_%EC%84%A0%ED%83%9D%EC%9E%90.jpeg)
 
 ### 기본 선택자
 - 전체 선택자 : `*`
