@@ -3,7 +3,7 @@
 - 태그 선택자 : `p {color: red;}`
 
 ## 속성
-![css_속성]()
+![css_속성](https://github.com/parkje0927/TIL/blob/main/html:css/css_%EC%86%8D%EC%84%B1.jpeg)
 ![css_border]()
 
 ## padding, margin
