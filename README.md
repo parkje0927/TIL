@@ -8,7 +8,7 @@ Today I Learned - 간단하게 기록하는 공간
   - [HikariCP, Hibernate, ORM, JPA](https://github.com/parkje0927/TIL/blob/main/Spring/basic/HikariCP,%20Hibernate,%20ORM,%20JPA.md)
   
 - mvc
-  - [mvc 기본 구조](https://github.com/parkje0927/TIL/blob/main/Spring/mvc/mvc\기본\구조.md)
+  - [mvc 기본 구조](https://github.com/parkje0927/TIL/blob/main/Spring/mvc/mvc_basic.md)
   
 - security
   - JWT Token
