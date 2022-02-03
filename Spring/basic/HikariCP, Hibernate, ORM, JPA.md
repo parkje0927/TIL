@@ -29,9 +29,12 @@ try {
 ```
 
 - 그렇다면, Connection 을 연결하는 과정은 아래와 같다.
+![HikariCP_flowchart]()
 
+- 이후 `Connection.close()` 를 하면 `Connection.close() -> concurrentBag.requite()` 이 실행되며 HikariPool 에 반납된다.
 
-
+### 참고한 사이트
+- https://techblog.woowahan.com/2664/
 
 
 Hibernate
