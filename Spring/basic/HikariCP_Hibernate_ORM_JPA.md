@@ -29,7 +29,7 @@ try {
 ```
 
 - 그렇다면, Connection 을 연결하는 과정은 아래와 같다.
-![HikariCP_flowchart]()
+![HikariCP_flowchart](https://github.com/parkje0927/TIL/blob/main/Spring/basic/HikariCP_flowchart.jpg)
 
 - 이후 `Connection.close()` 를 하면 `Connection.close() -> concurrentBag.requite()` 이 실행되며 HikariPool 에 반납된다.
 
