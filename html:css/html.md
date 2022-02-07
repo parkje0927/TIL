@@ -21,6 +21,15 @@
 	- radio
 	- checkbox
 
+## Box, Item
+### Box
+- Item 들의 sectioning 을 도와주고, 사용자의 눈에는 보이지 않음.
+- 나중에 css 로 스타일링은 가능하지만 html 에서는 보이지 않음.
+
+### Item
+- 실제 사용자의 눈에 보인다.
+- Block, Inline
+
 ## Block vs Inline
 ### Block
 - 부모 요소의 전체 공간을 차지하여 블록을 만든다.
@@ -79,3 +88,49 @@ div.item$*6 tab
 ## tip
 - mdn 활용하기 
 - w3c 활용하기
+
+## 예시
+```
+<body>
+  <!-- Box vs Item -->
+  <header></header>
+  <footer></footer>
+  <section></section>
+  <div></div>
+  <span></span>
+  
+  <h1></h1>
+  <button></button>
+  
+  <!-- a -->
+  <a href="http://google.com" target="_blank">Click</a>
+  
+  <!-- p, b, span : Inline -->
+  <p>This is a sentence. <b>That</b> is ...</p>
+  <p>This is a sentence. <span>That</span> is ...</p>
+  
+  <!-- div : Block -->
+  <p>This is a sentence. <div>That</div> is...</p>
+  
+  <!-- List -->
+  <ol type="i" reversed>
+    <li>1.</li>
+    <li>2.</li>
+    <li>3.</li>
+  </ol>
+  
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  
+  <!-- Input(label, input : Inline) -->
+  <label for="input_name">Name : </label>
+  <input id="input_name" type="text">
+  
+  <label for="file">Name : </label>
+  <input id="file" type="file">
+  
+</body>
+```

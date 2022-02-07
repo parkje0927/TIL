@@ -1,4 +1,7 @@
 # css(Cascading Style Sheets)
+## cascading
+- Author style -> User style -> Browser
+
 ## 문법
 - 태그 선택자 : `p {color: red;}`
 
