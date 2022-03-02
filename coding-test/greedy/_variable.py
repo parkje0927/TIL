@@ -22,6 +22,26 @@ a = 1234
 print(type(a))
 
 print(a, b, c, sep=', ')
-
 print(a, end=' ')
 print(b, end = ' ')
+print()
+
+# 변수 입력과 연산자
+
+# a = input("숫자를 입력하세요 : ")
+# print(a)
+
+# a, b = map(int, input("숫자를 입력하세요 : ").split())
+# print(a, b)
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a // b)
+# print(a % b)
+# print(a ** b)
+
+a = 4.3
+b = 5
+c = a + b
+print(type(c)) # float
