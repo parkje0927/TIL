@@ -46,7 +46,46 @@ Interceptor
 
 - 빈 주입 방법들과 가장 좋은 방법이 무엇인지, 왜 그것이 가장 좋은지 설명해주세요.
 ```
+1. 생성자 주입
+생성자 호출 시점에 1회 호출이 보장되어 주입받은 객체가 변하지 않거나 반드시 객체의 주입이 필요한 경우 강제하기 위해 사용할 수 있다. 
 
+@Service
+public class UserService {
+    private UserRepository repository;
+
+    public UserService(UserRepository repository) {
+        this.repository = repository;
+    }
+}
+
+2. setter 주입
+주입받는 객체가 변경될 가능성이 있는 경우 사용한다.
+
+@Service
+public class UserService {
+    private UserRepository repository;
+
+    @Autowired
+    public void setUserRepository(UserRepository repository) {
+        this.repository = repository;
+    }
+}
+
+3. 필드 주입
+필드에 바로 의존 관계를 주입하는 방법이다. 하지만 외부에서 변경이 불가능하다는 단점이 있어서 테스트 코드에서 이에 대한 제약이 존재한다.
+
+@Service
+public class UserService {
+
+    @Autowired
+    private UserRepository repository;
+}
+
+생성자 주입을 권장하고 있는데 이유는 다음과 같다.
+- 생성자 주입을 통해 변경 가능성을 배제하고 불변성을 보장할 수 있다.
+- 컴파일 시점에 객체를 주입받아 테스트 코드를 작성할 수 있으며, 주입하는 객체가 누락된 경우 오류를 발견할 수 있다.
+- 생성자 주입을 사용하면 필드 객체에 final 키워드를 사용할 수 있으며, @RequiredArgsContructor 를 같이 활용하여 생성자 주입을 할 수 있다.
+- 애플리케이션 구동 시점에 순환 참조 에러를 방지할 수 있다.
 ```
 
 - Spring 컨테이너를 통한 싱글톤 패턴과 Java 를 이용해 구현하는 싱글톤 패턴의 차이에 대해 설명해주세요.
