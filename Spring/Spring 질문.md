@@ -90,5 +90,27 @@ public class UserService {
 
 - Spring 컨테이너를 통한 싱글톤 패턴과 Java 를 이용해 구현하는 싱글톤 패턴의 차이에 대해 설명해주세요.
 ```
+자바 싱글톤은 클래스로더에 의해 구현되고, 스프링의 싱글톤은 스프링 컨테이너에 의해 구현된다. 즉, 스프링 컨테이너를 통한 싱글톤 패턴은, 클래스 자체에 의해서가 아니라 스프링 컨테이너에 의해 구현된다. 특정 클래스에 @Bean 이 정의되면, 스프링 컨테이너는 그 클래스에 대해 딱 한 개의 인스턴스를 만든다.
+자바 싱글톤의 scope는 코드 전체이고, 스프링 싱글톤의 scope 는 해당 컨테이너 내부이다.
+자바 싱글톤 패턴은 개발자의 로직에 따라 thread safety 를 보장할수도 있고, 보장하지 않을 수도 있다. 반면 스프링에 의해 구현되는 싱글톤 패턴은 Thread Safety 를 자동으로 보장한다. 
 
+아래와 같이 작성된 경우, SingletonService 객체를 생성하기 위해 new SingletonService() 로 호출시 에러가 뜨게 된다.
+
+public class SingletonService {
+	private static final SingletonService instance = new SingletonService();
+
+	public static SingletonService getInstance() {
+		return instance;
+	}
+
+	private SingletonService() {
+
+	}
+
+	public void test() {
+		System.out.prinln("싱글톤 객체 로직 호출");
+	}
+}
+
+참고 : https://gem1n1.tistory.com/96
 ```
