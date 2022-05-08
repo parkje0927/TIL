@@ -123,3 +123,7 @@ str += "world";
 반면, StringBuffer/StringBuilder 는 동일 객체 내에서 문자열 변경이 가능하여 문자열 추가, 수정, 삭제가 빈번할 경우 String 보다 이 클래스들을 활용해야 한다. 
 또한 이 둘의 차이는, StringBuffer 는 동기화를 지원해 멀티쓰레드 환경에서 안전하지만, StringBuilder 는 동기화를 지원하지 않지만 단일 쓰레드에서는 StringBuffer 보다 뛰어나다.
 ```
+
+- 접근제어자의 종류와 특성에 대해 설명해주세요.
+```
+```
