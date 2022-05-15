@@ -62,3 +62,8 @@ Redis 의 경우, Replication 을 지원하기 때문에 서버 하나에 장애
 
 참고 : https://hyuntaeknote.tistory.com/8?category=867120
 ```
+
+- 웹 애플리케이션 서버(Web Application Server) 동작방식에 대해서 설명해주세요.
+```
+
+```

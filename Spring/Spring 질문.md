@@ -135,3 +135,13 @@ Spring 에서는 @Transactional 어노테이션을 명시하게 되면 내부적
 
 참고 : https://hwannny.tistory.com/98
 ```
+
+- JPA에서 PK는 어떻게 설정하나요?
+```
+
+```
+
+- Spring의 DI가 어떻게 동작하는지 설명해주세요.
+```
+
+```
