@@ -142,4 +142,22 @@
 카테고리: [SERVER]
 문제 난이도: [NEW, JUNIOR]
 
+
+1. ORM에 대해 설명하고, 사용해본 도구가 있다면 얘기해주세요
+
+카테고리: [SERVER]
+문제 난이도: [NEW, JUNIOR, SENIOR]
+
+
+2. OAuth의 흐름에 대해 설명해주세요
+
+카테고리: [SERVER]
+문제 난이도: [NEW, JUNIOR]
+
+
+3. 동적 프로그래밍(Dynamic Programming)이 갖는 2가지 조건은 무엇인가요?
+
+카테고리: [ALGORITHM]
+문제 난이도: [NEW]
+
 ```
