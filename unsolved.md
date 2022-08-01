@@ -177,4 +177,23 @@
 카테고리: [NETWORK]
 문제 난이도: [NEW, JUNIOR]
 
+---
+
+1. HTTP 메서드와 각각이 사용되는 경우에 대해서 설명해주세요.
+
+카테고리: [NETWORK]
+문제 난이도: [NEW, JUNIOR]
+
+
+2. Restful API에 대해 설명해주세요
+
+카테고리: [SERVER]
+문제 난이도: [NEW]
+
+
+3. 가비지 컬렉션 알고리즘의 종류에 대해 설명해주세요
+
+카테고리: [JAVA]
+문제 난이도: [NEW, JUNIOR, SENIOR]
+
 ```
