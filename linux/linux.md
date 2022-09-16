@@ -7,3 +7,8 @@
 - Ctrl + e : 라인 맨 뒤로 커서 이동
 - Ctrl + r : history 검색
 ```
+
+### 실습 환경
+- JSLinux
+- Codeonweb
+- 리눅스 설치해서 bash 사용
