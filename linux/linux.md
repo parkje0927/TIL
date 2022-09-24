@@ -77,5 +77,9 @@
 - paste : 지정한 파일들의 행을 읽어 탭으로 구분하여 병합
     - shell script 에서 보통 사용한다.
 - dd : 블록 단위로 데이터셋을 정의하여 파일을 쓰고 읽음
+    - Dataset Definition
+    - dd if=인풋파일이름 of=아웃풋파일이름 bs=바이트(크기) count=블록을복사할횟수
 - tar : 지정한 데이터 및 디렉토리를 하나의 파일로 만든다.
+    - 압축한다 | create, verbal, zip, file => 이렇게 구성된 명령어가 cvzf : tar -cvzf 타르볼파일명 디렉토리명/파일명
+    - 압축 푼다 | extract, verbal, zimp, file => 이렇게 구성된 명령어가 xvzf : tar -xvzf 타르볼파일명
 ```
