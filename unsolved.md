@@ -196,4 +196,21 @@
 카테고리: [JAVA]
 문제 난이도: [NEW, JUNIOR, SENIOR]
 
+---
+
+1. 자료구조와 알고리즘에 대해 설명해주세요
+
+카테고리: [DATA_STRUCTURE]
+문제 난이도: [NEW]
+
+2. n개의 배열에서 k(k<=n) 번째로 큰수를 찾는 알고리즘에 대해 설명해주세요
+
+카테고리: [ALGORITHM]
+문제 난이도: [NEW]
+
+3. AVL 트리(Adelson-Velsky and Landis Tree)에 대해 설명해주세요
+
+카테고리: [DATA_STRUCTURE]
+문제 난이도: [NEW, JUNIOR]
+
 ```
