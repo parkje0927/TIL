@@ -213,4 +213,95 @@
 카테고리: [DATA_STRUCTURE]
 문제 난이도: [NEW, JUNIOR]
 
+1. TDD(Test-Driven-Devlopement)가 무엇인지 설명해주세요
+
+카테고리: [PROGRAMMING]
+문제 난이도: [NEW, JUNIOR, SENIOR]
+
+2. CORS(Cross-Origin-Resource-Sharing)에 대해 설명해주세요
+
+카테고리: [SERVER]
+문제 난이도: [NEW]
+
+3. 인덱스(Index)의 구현에 사용되는 대표적인 자료구조에 대해 설명해주세요
+
+카테고리: [DATABASE]
+문제 난이도: [NEW, JUNIOR]
+
+1. 웹서버(Web Server)와 웹 애플리케이션 서버(Web Application Server)의 차이와 대표적인 예시에 대해 설명해주세요
+
+카테고리: [SERVER]
+문제 난이도: [NEW]
+
+2. https://www.naver.com을 주소 창에 입력했을 때 동작하는 방식에 대해 설명해주세요
+
+카테고리: [NETWORK]
+문제 난이도: [NEW, JUNIOR]
+
+3. 이상 현상의 종류에 대해 설명해주세요
+
+카테고리: [DATABASE]
+문제 난이도: [NEW]
+
+1. 사전에서 검색을 제공하는 Application을 구현하고자 할 때 어떤 자료구조를 사용해 구현하실 건가요? 이유와 함께 설명해주세요
+
+카테고리: [PROBLEM_SOLVING]
+문제 난이도: [NEW, JUNIOR]
+
+2. 동적 프로그래밍(Dynamic Programming)에 대해 설명해주세요
+
+카테고리: [ALGORITHM]
+문제 난이도: [NEW]
+
+3. 스택(Stack), 큐(Queue), 트리(Tree), 힙(Heap) 자료구조에 대해 설명해주세요
+
+카테고리: [DATA_STRUCTURE]
+문제 난이도: [NEW]
+
+1. 인덱스(Index)에 대해 설명해주세요
+
+카테고리: [DATABASE]
+문제 난이도: [NEW, JUNIOR]
+
+2. Java의 장점과 단점에 대해 설명해주세요
+
+카테고리: [JAVA]
+문제 난이도: [NEW]
+
+3. 스택(Stack), 큐(Queue)을 직접 구현하고자 할 때, 어떻게 구현할 것인지 설명해주세요
+
+카테고리: [DATA_STRUCTURE]
+문제 난이도: [NEW, JUNIOR]
+
+1. 템플릿 메소드 패턴이란 무엇인가요?
+
+카테고리: [PROGRAMMING]
+문제 난이도: [NEW, JUNIOR, SENIOR]
+
+2. Spring과 SpringBoot의 차이에 대해 설명해주세요
+
+카테고리: [SPRING]
+문제 난이도: [NEW]
+
+3. Java의 StringBuffer와 StringBuilder의 차이에 대해 설명해주세요
+
+카테고리: [JAVA]
+문제 난이도: [NEW]
+
+1. TreeMap 자료구조에 대해 설명해주세요
+
+카테고리: [JAVA]
+문제 난이도: [NEW, JUNIOR]
+
+2. 싱글톤 클래스를 직접 구현해보세요
+
+카테고리: [PROBLEM_SOLVING]
+문제 난이도: [NEW, JUNIOR]
+
+3. 병렬 처리 프레임워크의 종류와 특징에 대해 설명해주세요
+
+카테고리: [PROGRAMMING]
+문제 난이도: [NEW, JUNIOR]
+
+
 ```
