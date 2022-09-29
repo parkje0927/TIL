@@ -213,6 +213,8 @@
 카테고리: [DATA_STRUCTURE]
 문제 난이도: [NEW, JUNIOR]
 
+---
+
 1. TDD(Test-Driven-Devlopement)가 무엇인지 설명해주세요
 
 카테고리: [PROGRAMMING]
@@ -227,6 +229,8 @@
 
 카테고리: [DATABASE]
 문제 난이도: [NEW, JUNIOR]
+
+---
 
 1. 웹서버(Web Server)와 웹 애플리케이션 서버(Web Application Server)의 차이와 대표적인 예시에 대해 설명해주세요
 
@@ -243,6 +247,8 @@
 카테고리: [DATABASE]
 문제 난이도: [NEW]
 
+---
+
 1. 사전에서 검색을 제공하는 Application을 구현하고자 할 때 어떤 자료구조를 사용해 구현하실 건가요? 이유와 함께 설명해주세요
 
 카테고리: [PROBLEM_SOLVING]
@@ -257,6 +263,8 @@
 
 카테고리: [DATA_STRUCTURE]
 문제 난이도: [NEW]
+
+---
 
 1. 인덱스(Index)에 대해 설명해주세요
 
@@ -273,6 +281,8 @@
 카테고리: [DATA_STRUCTURE]
 문제 난이도: [NEW, JUNIOR]
 
+---
+
 1. 템플릿 메소드 패턴이란 무엇인가요?
 
 카테고리: [PROGRAMMING]
@@ -287,6 +297,8 @@
 
 카테고리: [JAVA]
 문제 난이도: [NEW]
+
+---
 
 1. TreeMap 자료구조에 대해 설명해주세요
 
