@@ -102,3 +102,20 @@
     - kill -9 프로세스번호 or kill -KILL 프로세스번호
     - 좀비 프로세스는 INT 나 TERM 으로는 안 죽기 때문에 kill -9 혹은 kill -KILL 로 죽일 수 있다.
 ```
+
+### 네트워크 관련 명령어
+```
+- ifconfig(Interface Configuration)
+    - 네트워크 인터페이스의 활성/비활성화 및 설정
+- ip
+    - ip 관련 정보 조회 및 설정
+- netstat(Network Statistics)
+    - 네트워크 프로토콜의 통계와 연결상태를 출력
+- ss(Socket Statistics)
+    - 네트워크 소켓의 통계와 연결상태를 출력
+
+```
+
+
+
+
