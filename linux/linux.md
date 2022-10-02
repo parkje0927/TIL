@@ -111,9 +111,10 @@
     - ip 관련 정보 조회 및 설정
 - netstat(Network Statistics)
     - 네트워크 프로토콜의 통계와 연결상태를 출력
+    - netstat -nltpu : active internet connections(only servers)
 - ss(Socket Statistics)
     - 네트워크 소켓의 통계와 연결상태를 출력
-
+    - ss -nltpu
 ```
 
 
