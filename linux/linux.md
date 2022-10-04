@@ -115,6 +115,9 @@
 - ss(Socket Statistics)
     - 네트워크 소켓의 통계와 연결상태를 출력
     - ss -nltpu
+- iptables : 패킷 필터링 도구로 패킷의 출입을 제한하는 방화벽 구성이나 NAT(Network Address Translation) 구성에 사용
+- ufw(Uncomplicated Firewall) : iptables 의 제어를 쉽게 하기 위한 도구
+- ping : ICMP 프로토콜의 응답 확인 도구
 ```
 
 
