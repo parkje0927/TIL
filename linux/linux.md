@@ -119,5 +119,25 @@
 - ufw(Uncomplicated Firewall) : iptables 의 제어를 쉽게 하기 위한 도구
 - ping : ICMP 프로토콜의 응답 확인 도구
     - ping -c 5 '서버 이름' : ping 을 몇 번 보낼지 정하는 것 / 서버 이름에 ping 을 5번 보낸다.
+- wget(World Wide Web + GET)
+    - 웹 서버로부터 컨텐츠를 가져오는 도구
+- curl(Client for URLs)
+    - 다양한 프로토콜을 사용하여 데이터를 전송하게 해주는 도구
+    - 예시) curl -Lkso /dev/null -w "%{http_code}\n" https://gmail.com
+        - L : 링크를 따라가서 다음 리다이렉트 된 곳으로 넘어간다.
+        - k : ssl 무시
+        - s : silence 모드, 통계값 출력하지 말아라
+        - o : output 파일 지정
+        - /dev/null : 아무 것도 없는 상태를 나타내는 파일을 만들어라(***), 출력 파일 안 만든다.
+        - w : output 포맷을 결정하는 옵션
+- route 
+    - 네트워크의 경로 정보(라우팅 테이블)의 출력, 변경하는 도구
+    - 0.0.0.0 : 기본 게이트웨이 주소
+    - 255.255.255.0 : 목적지의 호스트 주소
+    - route -n : 문자를 ip 주소로 변경해서 숫자로 표시
 ```
 
+### 검색/탐색 관련 명령어
+```
+
+```
