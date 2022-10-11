@@ -290,8 +290,10 @@
 
 2. Spring과 SpringBoot의 차이에 대해 설명해주세요
 
-카테고리: [SPRING]
-문제 난이도: [NEW]
+spring boot starter 가 대부분의 dependency 를 관리해준다.
+spring boot 는 xml 설정을 하지 않아도 된다.
+spring boot 는 AutoConfiguration 이 있어서 많은 외부 라이브러리, 내장 톰캣 서버등이 실행될 수 있다.
+
 
 3. Java의 StringBuffer와 StringBuilder의 차이에 대해 설명해주세요
 
