@@ -145,3 +145,16 @@ Spring 에서는 @Transactional 어노테이션을 명시하게 되면 내부적
 ```
 
 ```
+
+- Spring의 3가지 Layer에 대해 설명해주세요
+```
+presentation layer, service layer, data access layer 3가지 계층과 모든 계층에서 사용되는 도메인 모델 클래스로 구성되어 있다. 각각의 계층은 독립적으로 분리하여 구현하는 것이 가능해야 하는데 presentation layer 는 요청 및 응답을 처리한다. 즉 비즈니스 로직과 최종 UI 를 분리하기 위해서 컨트롤러 기능을 제공한다.
+service layer 는 비즈니스 로직 처리와 도메인 모델의 적합성 검증을 한다. data access layer 는 데이터 액세스 로직을 객체화하고 마지막으로 도메인 모델 클래스는 VO 또는 DTO 객체에 해당한다.
+```
+
+- Spring과 SpringBoot의 차이에 대해 설명해주세요
+```
+spring boot starter 가 대부분의 dependency 를 관리해준다.
+spring boot 는 xml 설정을 하지 않아도 된다.
+spring boot 는 AutoConfiguration 이 있어서 많은 외부 라이브러리, 내장 톰캣 서버등이 실행될 수 있다.
+```
