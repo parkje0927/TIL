@@ -148,3 +148,11 @@ final variable, arguments : 값이 변경되지 않도록 만든다.
 final class : 클래스를 상속하지 못하도록 만든다.
 fianl method : 메소드가 오버라이드되지 못하도록 만든다.
 ```
+
+- try-with-resources에 대해 설명해주세요
+```
+이전에는 try-catch-finally 로 처리를 했는데 JDK7부터 추가된 개념이다.
+try 에 자원 객체를 전달하고 try 코드 블록이 끝나면 finally 블록 없이도 자동으로 자원을 종료해주는 기능이다. 
+사용 방법은 try(...) 안에 객체 선언 및 할당을 해주면 try 문을 벗어나면 try(...) 안에서 선언된 객체의 close() 메소드들을 호출한다. 그래서 finally 에 close() 를 명시적으로 호출해줄 필요 없이 자동으로 종료가 되는 것이다.
+여기서 close() 를 호출해주는 객체는 AutoCloseable 을 구현한 객체만 호출이 되므로 내가 만든 클래스가 자원해제되길 원한다면 해당 인터페이스를 implements 해야 한다.
+```

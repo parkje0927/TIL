@@ -13,7 +13,7 @@
 
 - 사용자 등록/조회/수정/삭제에 대한 Rest API를 설계해보세요
 
--  HTTP와 HTTPS의 차이점에 대해 설명해주세요
+- HTTP와 HTTPS의 차이점에 대해 설명해주세요
 
 - Docker와 Kubernates에 대해 설명해주세요
 
