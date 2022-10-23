@@ -25,8 +25,6 @@
 
 - JVM, JRE, JDK에 대해 설명해주세요
 
-- TDD(Test-Driven-Devlopement)의 중요 개념이 무엇인가요?
-
 - Spring에서 의존성 주입을 지원하는 이유는 무엇인가요?
 
 - 페이지 교체 알고리즘과 LRU에 대해 설명해주세요
