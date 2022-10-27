@@ -138,7 +138,15 @@ Spring 에서는 @Transactional 어노테이션을 명시하게 되면 내부적
 
 - JPA에서 PK는 어떻게 설정하나요?
 ```
-
+@Id 만 사용하는 경우와 @Id, @GeneratedValue 를 같이 사용하는 방법이 있으며 후자의 경우 4가지의 자동 생성 전략이 있다.
+- IDENTITY
+기본 키 생성을 데이터베이스에 위임, id 값을 null 로 하면 DB 가 알아서 AUTO_INCREMENT 해준다.
+- SEQUENCE
+Sequence Object 를 사용한다. 유일한 값을 순서대로 생성하는 특별한 데이터베이스 오브젝트이다.
+- TABLE
+키 생성 전용 테이블을 만들어서 시퀀스처럼 이용하는 전략
+- AUTO
+데이터베이스 방언에 따라 3가지 전략을 자동으로 지정한다.
 ```
 
 - Spring의 DI가 어떻게 동작하는지 설명해주세요.
