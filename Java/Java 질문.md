@@ -108,7 +108,6 @@ Runtime Data Area
 JVM 의 메모리 영역으로 자바 애플리케이션을 실행할 때 사용되는 데이터들을 적재하는 영역이다. 이 영역은 크게 Method Area, Heap Area, Stack Area, PC Register, Native Method Stack 으로 나눌 수 있다.
 ```
 
-
 - Java 의 String 과 StringBuilder 의 차이에 대해 설명하고 언제 StringBuilder 를 사용하면 좋을지 얘기해주세요.
 ```
 String 과 StringBuffer/StringBuilder 클래스의 가장 큰 차이점은 String 은 불변의 속성을 갖는다.
@@ -126,6 +125,14 @@ str += "world";
 
 - 접근제어자의 종류와 특성에 대해 설명해주세요.
 ```
+1) private
+private 이 붙은 변수, 메소드는 해당 클래스에서만 접근이 가능하다.
+2) default
+접근 제어자를 별도로 설정하지 않으면 접근 제어자가 없는 변수, 메소드는 default 접근 제어자가 되어 해당 패키지 내에서만 접근이 가능하다.
+3) protected
+protected 가 붙은 변수, 메소드는 동일 패키지의 클래스 또는 해당 클래스를 상속받은 다른 패키지의 클래스에서만 접근 가능하다.
+4) public
+어떤 클래스에서라도 접근이 가능하다.
 ```
 
 - Java의 StringBuffer와 StringBuilder의 차이에 대해 설명해주세요
