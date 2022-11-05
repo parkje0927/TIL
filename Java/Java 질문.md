@@ -169,3 +169,16 @@ try 에 자원 객체를 전달하고 try 코드 블록이 끝나면 finally 블
 private 이다. 
 먼저 public 의 경우에는 어떤 클래스라도 접근 가능하며 protected 의 경우에는 상속 관계에 있을 때 상속 받은 클래스에서 사용가능한 접근 제어자이다. 하지만 private 은 해당 클래스에서만 접근 가능하기 때문에 불가능하다.
 ```
+
+- Java에서 제공하는 원시 타입들에 무엇이 있고, 각각 몇 바이트를 차지하나요?
+```
+- 논리형 boolean : 1byte
+- 문자형 char : 2byte
+- 정수형 byte : 1byte
+- 정수형 short : 2byte
+- 정수형 int : 4byte
+- 정수형 long : 8byte
+- 실수형 float : 4byte
+- 실수형 double : 8byte
+
+```
