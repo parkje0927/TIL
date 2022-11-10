@@ -187,3 +187,24 @@ private 이다.
 Stack1, Stack2 가 있고 Queue 를 구현한다고 했을 때, 예시로 1, 2, 3, 4 숫자를 Stack1 에 넣는다고 가정한다. 만약 Stack 구조에 넣고 pop 을 한다면 1, 2, 3, 4 로 넣은 데이터가 4, 3, 2, 1 순서로 조회가 될 것이다.
 이때 Stack1 에 넣은 데이터를 하나씩 빼오면서 Stack2 에 넣는다. 그 이후에 Stack2 에서 데이터를 조회해오면 Queue 에 데이터를 넣고 조회해오는 것과 동일한 결과를 얻을 수 있다.
 ```
+
+- 스트링 문자열을 거꾸로 만들어 반환하는 코드를 구현해보세요
+```java
+String str = "HELLO";
+
+String reverseStr = "";
+for (int i = str.length() - 1; i >= 0; i--) {
+    reverseStr += str.charAt(i);
+}
+
+System.out.println(reverseStr);
+```
+
+```java
+String str = "HELLO";
+
+StringBuffer sb = new StringBuffer(str);
+String reverseStr = sb.reverse().toString();
+
+System.out.println(reverseStr);
+```
