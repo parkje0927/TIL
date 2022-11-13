@@ -208,3 +208,8 @@ String reverseStr = sb.reverse().toString();
 
 System.out.println(reverseStr);
 ```
+
+- Java의 해시 맵(Hash Map)과 해시 테이블(Hash Table)의 차이에 대해 설명해주세요
+```
+두 자료구조 모두 map 자료구조라는 점에서는 동일하지만 HashMap 은 동기화를 지원하지 않아서 단일스레드에서 사용하기 좋은 자료구조라는 장점이 있다. 반면 HashTable 은 동기화를 지원하며 thread-safe 하다.
+```
