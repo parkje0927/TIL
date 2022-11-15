@@ -55,8 +55,6 @@
 
 - AVL 트리(Adelson-Velsky and Landis Tree)에 대해 설명해주세요
 
-- CORS(Cross-Origin-Resource-Sharing)에 대해 설명해주세요
-
 - 웹서버(Web Server)와 웹 애플리케이션 서버(Web Application Server)의 차이와 대표적인 예시에 대해 설명해주세요
 
 - https://www.naver.com을 주소 창에 입력했을 때 동작하는 방식에 대해 설명해주세요

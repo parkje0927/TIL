@@ -131,8 +131,30 @@ DDD는 해당 도메인과 일치하도록 소프트웨어를 모델링하는 �
 - MSA에 대해 설명하고 MSA가 갖는 장점과 단점에 대해 설명해주세요
 ```
 MSA 란 마이크로 서비스 아키텍처(Micro Service Architecture)의 약자로 단일 프로그램을 각 컴포넌트 별로 나누어 작은 서비스의 조합으로 구축하는 방법이다.
-
 장점은, 각각 개별의 서비스 개발을 빠르게 하고 유지보수도 쉽다. 그리고 회사 팀 단위로 기술 스택을 다르게 설정할 수 있다. 그리고 서비스별로 독립적 배포가 가능하며 개별적 scale-out 이 가능하다.
-
 단점은, 상대적으로 복잡하다는 것이 단점이다. 서비스가 모두 분산되어 있으며 통합 테스트도 어렵고 따라서 실제 운영환경에 배포하는 것도 쉽지 않다.
+```
+
+- CORS(Cross-Origin-Resource-Sharing)에 대해 설명해주세요
+```
+브라우저가 리소스 로드를 허용해야 하는 모든 출처를 서버가 표시할 수 있도록 한다.
+url 구조는 https://google.com/qwer?page=1 라는 url 이 있을 때, 
+
+https:// => protocol
+google.com => host
+qwer => path
+page=1 => query string 
+
+로 구분할 수 있다.
+여기서 origin 출처란, protocol, host, port 를 합친 것을 말한다. 여기서 3개 중에 하나만 달라도 다른 출처로 인식이 되고, 브라우저가 동일 출철 정책(SOP)를 지키기 위해 다른 출처의 리소스 접근을 막기 위해 CORS Policy 오류가 나타나게 된다.
+CORS 동작 원리는 단순 요청 방법과 예비 요청을 먼저 보내는 방법 2가지가 있다.
+
+단순 요청 방법은 서버에 바로 요청을 보내는 방법이며 아래 조건을 만족해야 한다.
+- 요청 메소드는 GET, HEAD, POST 중 하나여야 한다.
+- Accept, Accept-Language, Content-Language, Content-Type, DPR, Downlink, Save-Data, Viewport-Width, Width 를 제외한 헤더를 사용하면 안 된다.
+- Content-Type 헤더는 application/x-www-form-urlencoded, multipart/form-data, text/plain 중 하나를 사용해야 한다.
+
+예비 요청을 먼저 보내는 방법은 preflight 요청이다. 예비 요청을 보내서 안전한지 판단한 후 본 요청을 보내는 방법이다. 실제 리소스를 요청하기 전에 OPTIONS 라는 메소드를 통해 실제 요청을 전송할지 판단한다.
+
+CORS 오류를 해결하기 위해서는 서버에서 몇가지 응답 헤더를 포함하는 설정을 추가해야한다.
 ```
