@@ -60,4 +60,10 @@
 - Spring의 DI, DL, IoC, AOP에 대해 설명해주세요
 
 - 메모리가 무엇인지 설명해주세요
+
+- 알고있는 Http Response들에 대해 얘기해주세요
+
+- Junit4와 Junit5의 차이점에 대해 설명해주세요
+
+- Spring WebFlux에 대해 설명해주세요
 ```
