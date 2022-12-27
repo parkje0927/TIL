@@ -229,3 +229,9 @@ JPA 에서 연관관계를 설정할 때 즉시 로딩을 할 경우, 첫 번째
 1. Fetch Join
 JPQL 을 사용해서 처음부터 연관된 데이터까지 같이 가져오게 하는 방법이다. join fetch 엔티티.연관관계_엔티티 구문을 만들어서 @Query 어노테이션으로 sql 문을 실행해주면 된다.
 ```
+
+- Junit4와 Junit5의 차이점에 대해 설명해주세요
+```
+Junit 은 자바 유닛 테스트 프레임워크인데 Juni4 는 vintage-engine 을, Junit5 는 jupiter-engine 을 사용한다는 차이점이 있다. 그리고 Junit5 는 3개의 서브 프로젝트로 구성되어 있는데 각각은 Junit Platform, Junit Jupiter, Junit Vintage 이다.
+Junit Platform 은 테스트를 실행하기 위한 기반이 되는 모듈이며, Junit Jupiter 는 테스트를 기수하기 위한 확장 모델이 담긴 모듈이다. Junit Vintage 는 테스트 엔진이다.
+```
