@@ -219,8 +219,13 @@ CSRF(Cross-Site Request Forgery)는 악성 웹사이트 공격유형이다. 웹 
 ElasticSearch 는 샤드를 통해 규모가 수평적으로 확장되고, Replica 를 통해 안전성이 보장된다. 그리고 스키마 개념이 없다는 것이 특징이다.
 ```
 
-- Restful API에 대해 설명해주세요
+- Restful API 의 장점
 ```
+Restful 이란, 일반적으로 REST 라는 아키텍처를 구현하는 웹 서비스를 나타내기 위해 사용되는 용어로, REST 를 REST 답게 쓰기 위한 방법이다. 목적은 이해하기 쉽고 사용하기 쉬운 Rest API 를 만드는 것이고, API 의 이해도 및 호환성을 높이는 것이 주동기이다.
+
+REST API 설계 규칙
+- URI 는 정보의 자원을 표현해야한다. 동사보다는 명사를, 대문자보다는 소문자를 사용해야한다.
+- 자원에 대한 행위는 get, put, post, delete 으로 표현해야한다.
 ```
 
 - BCrypt 암호화 방식에 대해 설명해주세요
