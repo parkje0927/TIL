@@ -235,3 +235,10 @@ JPQL 을 사용해서 처음부터 연관된 데이터까지 같이 가져오게
 Junit 은 자바 유닛 테스트 프레임워크인데 Juni4 는 vintage-engine 을, Junit5 는 jupiter-engine 을 사용한다는 차이점이 있다. 그리고 Junit5 는 3개의 서브 프로젝트로 구성되어 있는데 각각은 Junit Platform, Junit Jupiter, Junit Vintage 이다.
 Junit Platform 은 테스트를 실행하기 위한 기반이 되는 모듈이며, Junit Jupiter 는 테스트를 기수하기 위한 확장 모델이 담긴 모듈이다. Junit Vintage 는 테스트 엔진이다.
 ```
+
+- JPA를 사용하는 이유에 대해 설명해주세요
+```
+JPA 는 ORM 즉 객체와 관계형 데이터베이스의 연결을 해주는 ORM 의 한 종류이다. 그렇기 때문에 SQL 중심 개발에서 객체 중심 개발이 가능하게 만들고, 객체와 RDB 간의 패러다임 불일치를 해결해준다.
+
+//JPA, ORM 내용은 추후에 책을 읽고 더 정리하기!!
+```
