@@ -70,6 +70,4 @@
 - Java의 Optional API에 대해 설명해주세요
 
 - Byte Ordering에 대해 설명해주세요
-
-- 3-Way Handshake에 대해 설명해주세요
 ```
