@@ -242,3 +242,6 @@ JPA 는 ORM 즉 객체와 관계형 데이터베이스의 연결을 해주는 OR
 
 //JPA, ORM 내용은 추후에 책을 읽고 더 정리하기!!
 ```
+
+- Spring의 DI, DL, IoC, AOP에 대해 설명해주세요
+- Spring WebFlux에 대해 설명해주세요
