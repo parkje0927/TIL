@@ -8,6 +8,22 @@ Read Lock 이라고 불리며 데이터를 읽을 때 사용되어지는 Lock �
 
 Exclusive Lock
 베타 Lock 은 데이터를 변경하고자 할 때 사용되며, 트랜잭션이 완료될 때까지 유지된다. 베타락은 Lock 이 해제될 때까지 다른 트랜잭션은 해당 리소스에 접근할 수 없다. 또한 해당 Lock 은 다른 트랜잭션이 수행되고 있는 데이터에 대해서는 접근하여 함께 Lock 을 설정할 수 없다.
+
+---
+글로벌 락
+`flush tables with read lock;`
+→ read O, write X
+
+테이블 락
+- read lock : read 할 거니까 update 하지마
+`lock tables ‘테이블명’ read;`
+
+- write lock : update 할 거니까 read 하지마
+`lock tables ‘테이블명’ write;`
+
+네임드 락
+`select get_lock(’디비명’, 30)` ⇒ 이거가 Lock 을 가져감. 그러면 다른 곳에서 read 하려할 때 안된다.
+→ `select release_lock(’디비명’)` ⇒ lock 풀어준다.
 ```
 
 - 데이터베이스 튜닝의 3가지 단계에 대해 설명해주세요.
