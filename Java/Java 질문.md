@@ -268,3 +268,12 @@ list.stream().forEach(data -> {
 
 list.stream().forEach(data -> System.out.println(data.toString()));
 ```
+
+- 쓰레드를 구현하기 위한 인터페이스, 클래스는 무엇이 있나요?
+```
+Runnable 인터페이스, Thread 클래스가 있다.
+Runnable 인터페이스는 run() 메소드 한 개를 가지고 있어서 이를 구현하도록 되어 있는데 스레드가 시작될 때 run() 메소드가 실행되어 실행될 코드를 구현하는 것이다.
+Thread 클래스는 컴퓨팅 시스템의 스레드 기능을 가진 클래스로, Runnable 인터페이스를 상속받고 있기에 run() 메소드만 구현해주면 된다.
+
+Thread 방법이 간단해보이지만 다중 상속을 허용하지 않으므로 Thread 를 상속받으면 다른 클래스를 상속 받을 수 없다. 하지만 Runnable 인터페이스를 구현할 경우, 다른 클래스도 상속 받을 수 있다.
+```
