@@ -36,3 +36,44 @@
 
 ### Spot
 - 단순히 비용 절감 시 유용하다. 인스턴스의 시작/끝 시점에 구애받지 않을 경우 권장한다.
+
+## EBS
+- Elastic Block Storage
+- 저장 공간이 생성되어지며 EC2 인스턴스에 부착된다.
+- 디스크 볼륨 위에 File System 이 생성된다.
+- EBS 는 특정 Availability Zone 에 생성된다.
+    - Availability Zone : 한 쪽 서버 안 될 경우 AZ 로 회복 가능, disaster recovery
+
+## 볼륨 타입
+- SSD
+    - General Purpose SSD(GP2) : 최대 19k IOPS 를 지원하며 1GB 당 3IOPS 속도가 나옴.
+    - Provisioned IOPS SSD(IO1) : 극도의 I/O률을 요구하는 환경에서 주로 사용됨. 10K 이상의 IOPS 를 지원함.
+- HDD
+    - Throughput Optimized HDD(ST1) : 빅데이터 Datawarehouse, Log 프로세싱시 주로 사용
+    - CDD HDD(SC1) : 파일 서버와 같이 드문 volume 접근 시 주로 사용, 역시 Boot Volume 으로 사용 불가능하나 비용은 매우 저렴함.
+    - Magnetic(Sandard) : 디스크 1GB 당 가장 싼 비용을 자랑함. Boot Volume 으로 유일하게 가능함.
+
+## ELB
+- Elastic Load Balancers
+- 수많은 서버의 흐름을 균형있게 흘려보내는데 중추적인 역할을 함.
+- 하나의 서버로 traffic 이 몰리는 병목현상 방지
+- traffic 의 흐름을 Unhealthy instance -> healthy instance 로 보내준다.
+- Load Balancer Error : 504 Error -> 웹 서버 layer 나 데이터베이스 layer 에서 주로 해결이 가능하다.
+- X-Forwarded-For 헤더
+    - public IP address 인 152.12.3.225  가 DNS request 를 통해 ELB 에 도달 -> 이는 10.0.0.23 인 private IP address 로 인식한다. -> EC2 로 전달한다. -> EC2 는 private IP address 밖에 볼 수가 없다. -> X-Forwarded-For 을 통해 원래의 public IP address 인 152.12.3.225 를 알 수 있다.
+
+### 종류
+- Application Load Balancer
+    - OSI 7 Layer 에서 작동됨.
+    - HTTP, HTTPS 와 같은 traffic 의 load balancing 에 가장 적합함.
+    - 고급 request 라우팅 설정을 통하여 특정 서버로 request 를 보낼 수 있음.
+- Network Load Balancer
+    - OSI 4 Layer(transport layer) 에서 작동됨.
+    - 매우 빠른 속도를 자랑하며 production 환경에서 종종 쓰임.
+    - 극도의 performance 가 요구되는 TCP traffic 에서 적합함.
+    - 초당 수백만개의 request 를 아주 미세한 delay 로 처리 가능
+- Classic Load Balancer 
+    - 현재 Legacy 로 간주됨.
+    - 따라서 거의 쓰이지 않음.
+    - Layer 7 HTTP, HTTPS 라우팅 기능 지원
+    - Layer 4 TCP traffic 라우팅 기능 지원
