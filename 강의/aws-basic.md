@@ -144,3 +144,23 @@
         - Multi-AZ 지원
         - 재해 복구 기능
         - List, Set 과 같은 데이터셋을 사용할 경우, 데이터셋의 랭킹을 정렬하는 용도가 필요할 경우, Multi AZ 기능이 사용되어져야 할 때
+
+## S3
+- Simple Storage Service
+- 안전하고 가변적인 Object 저장공간을 제공
+- 편리한 UI 인터페이스를 통해 어디서나 쉽게 데이터를 저장하고 불러올 수 있음.
+- 파일 크기는 0KB 부터 5TB 까지 지원
+- 저장공간 무제한
+- Bucket 이라는 이름을 사용함(디렉토리와 유사함.)
+- Bucket 은 보편적인 namespace 를 사용함.
+
+### S3 Object 구성요소
+- Key : 파일명
+- Value : 파일에 대한 데이터
+- Version ID : S3 고유 특징 같은 파일도 버전 다르게 저장하여 복원에 유용
+- Metadata
+- CORS(Cross Origin Resource Sharing) : 지역과 무관하게 한 버킷에서 다른 버킷에 접근 가능
+
+### S3 Data Consistency Model
+- Read after Write Consistency(PUT) : S3 버킷에 올라가면 즉시 사용 가능
+- Eventual Consistency(UPDATE, DELETE) : S3 버킷에 올라간 것을 수정하거나 삭제 시 바로 적용 X
