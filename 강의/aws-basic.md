@@ -164,3 +164,34 @@
 ### S3 Data Consistency Model
 - Read after Write Consistency(PUT) : S3 버킷에 올라가면 즉시 사용 가능
 - Eventual Consistency(UPDATE, DELETE) : S3 버킷에 올라간 것을 수정하거나 삭제 시 바로 적용 X
+
+### 다양한 S3 스토리지 타입
+- 일반 S3
+    - 가장 보편적으로 사용되는 스토리지 타입
+    - 높은 내구성, 가용성
+- S3-IA(Infreguent Access)
+    - 자주 접근되지는 않으나 접근 시 빠른 접근이 요구되는 파일이 많을 시 유용
+    - 일반 S3 에 비해 비용은 저렴하나 접근 시 추가 비용 발생
+    - 멀티 AZ 를 통한 데이터 저장 -> 가용성이 매우 높다.
+- S3 One Zone IA
+    - 단일 AZ 를 통한 데이터 저장
+    - 단일 AZ 에 의한 데이터 접근 제한(조금 낮은 가용성)
+    - 데이터 접근 시 S3 - IA 보다 20% 비용 저렴
+- Glacier
+    - 거의 접근하지 않을 데이터 저장 시 유용
+    - 매우 저렴한 비용
+    - 데이터 접근 시 대략 4-5 시간 소요
+- Intelligent Tiering
+    - 데이터 접근 주기가 불규칠할 때 매우 유용
+    - 2가지 티어 존재
+        - Frequent Tier
+        - Infrequent Tier
+    - 데이터 접근 주기에 따라 두 가지 티어 중 하나로 선택됨.
+    - Frequent Tier 가 비용이 좀 더 비쌈.
+    - 최고의 비용 절감 효율을 누릴 수 있음.
+
+### S3 요금
+- GB 당 요금
+- PUT, GET, COPY 요청 횟수 당 다르다.
+- 데이터 다운로드 시, 다른 리소스 전송 시에 따라 다르다.
+- S3 에 들어가 있는 Metadata(Object tag) 에 따라 다르다.
