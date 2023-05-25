@@ -204,3 +204,16 @@
 - 최초 버켓 생성 시 비공개 => private
     - 1) 버켓 정책 변경 : public 으로 바꾸면 모든 파일에 접근 가능하다.
     - 2) 접근 제어 리스트 변경 : 파일 하나하나에 다른 접근 제어 가능하다.
+
+### 암호화
+- 파일 업로드/다운로드시
+    - SSL/TLS : https
+- 가만히 있을 시
+    - SSE-S3 : 모든 Object 에는 고유한 키를 가지는데, SSE-S3 는 마스터 키를 부여 받아 특정 시간이 지나면 바뀐다. 키 값은 AES-256 으로 구성되어 있다.
+    - SSE-KMS : AWS 에서 관리를 해주는데, KMS 암호를 이용하여 언제 누가 어떻게 암호를 풀었는지까지 관리를 해준다.
+    - SSE-C : 암호 키를 직접 관리할 수 있다.
+- 암호화 과정
+    - put 요청이 생성됨.
+        - put, host, date, authorization, content-type, content-length, x-amz-meta-author, expect
+    - `x-amz-server-side-encryption-parameter` : AES-256 => 암호화 알고리즘을 설정할 수 있다.
+    - 암호화가 걸리지 않은 파일을 버켓에 못 올리게 하는 기능은 없나? -> 있다. 버켓 정책 설정을 이용하면 된다. 위 값이 헤더에 없다면 파일 reject 하면 된다.
