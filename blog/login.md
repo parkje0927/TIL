@@ -8,11 +8,17 @@ Session 동작 방식, SessionResolver
 ```
 
 ### MSA 환경에서 토큰 방식
+![gateway](/blog/image/login_1.png)
+- client 에서 직접적으로 auth, user 와 통신하는 일은 없으며, gateway 를 통해서 통신
+- 이때, route 설정을 통해 token 검증이 필요한 요청을 설정할 수 있는데, gateway 에서 토큰의 유효성과 만료 여부를 확인하도록 구성했음.
+    - 다른 micro 서비스는 검증이 완료된 요청에 대한 비즈니스 로직을 수행하도록 하고, gateway 가 검증을 하는 역할을 해줌으로써 역할과 책임을 분리
+- 또한, 토큰 검증이 정상적으로 처리된 경우에는 필요한 데이터를 header 에 담아서 전달하여 요청을 처리하는 서비스에서 해당 데이터를 handler 에서 처리하도록 구현함.
+    - `ThreadLocal` 이용
 
-
+- 기본적으로 gateway 의 경우 lb 를 구현할 경우 round robin 방식으로 구성되어 있는데, 이때 특정 요청이 수행될 때 만약 lb 로 구성된 인스턴스 중 한 곳에서 5XX server error 가 반환될 경우 다른 인스턴스로 요청이 이어질 수 있도록 RetryFilter 를 구현함.
+- 추가적으로, 특정 ip 만 요청이 갈 수 있도록 제한하거나 특정 url 로 오는 요청을 block 시키는 요청을 filter 로 구현할 수 있음.
 
 ### 소셜 로그인
-
 OAuth2 라이브러리를 활용해서 서버에서 주도적으로 로그인을 처리하려고 함.
 이유는, redirectUrl 을 프론트 주소로 설정하게 되면 이후 OAuth2 의 흐름을 이어가기 위해 직접 3rd-party 에 API 요청을 보내야하는데 그런 로직을 직접 구성하기보다 OAuth2, Spring security 의 의존성을 그대로 활용해보고 싶었기 때문
 
